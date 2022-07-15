@@ -1,15 +1,10 @@
 footer{
     background: #E9ECEF;
     width: 100%;
-    z-index: 110;
+
     .container-fluid{
         .row{
-            .text-1{
-                font-weight: 500;
-                font-size: 17px;
-                line-height: 18px;
-                color: #000000;
-            }
+           
             .inner-a{
                 color: #000000;
                 transition: all .4s linear;
@@ -22,6 +17,7 @@ footer{
             .footer-top{
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
                 width: 100%;
                 height: 100%;
                 .content-menus{
@@ -33,39 +29,48 @@ footer{
                         padding: 10px;
                         display: flex;
                         flex-direction: column;
-                        
-                        .hover-coral{
-                            &:is(:hover,:focus){
-                                color: #F29942;
-                                font-weight: 600;
-                            }
-                        }
                         &.logos{
                             display: flex;
                             justify-content: space-between;
                             height: 100%;
                             .logo-text{
-                                @extend .text-1;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 18px;
+                                color: #000000;
                                 padding-top: 20px;
                             }
                         }
                         &.maps{
                             .map-text{
-                                @extend .text-1;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 18px;
+                                color: #000000;
                                 font-size: 16px;
                             }
                             .phone-text{
-                                @extend .text-1;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 18px;
+                                color: #000000;
                                 padding-top: 20px;
                                 a{
-                                    @extend .inner-a;
+                                    color: #000000;
+                                    transition: all .4s linear;
+                                    text-transform: capitalize;
                                 }
                             }
                             .mail-text{
-                                @extend .text-1;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 18px;
+                                color: #000000;
                                 padding-top: 20px;
                                 a{
-                                    @extend .inner-a;
+                                    color: #000000;
+                                    transition: all .4s linear;
+                                    text-transform: capitalize;
                                     text-transform: lowercase;
                                     text-decoration: underline !important;
                                 }
@@ -73,11 +78,17 @@ footer{
                         }
                         &.joins{
                             .join{
-                                @extend .text-1;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 18px;
+                                color: #000000;
                             }
                             .join-mail{
                                 padding-top: 10px;
-                                @extend .text-1;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 18px;
+                                color: #000000;
                                 a{
                                     text-transform: lowercase;
                                     text-decoration: underline !important;
@@ -86,10 +97,18 @@ footer{
                         }
                         &.menu{
                             span{
-                                @extend .text-1;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 18px;
+                                color: #000000;
                                 a{
-                                    @extend .inner-a;
-                                    @extend .hover-coral;
+                                    color: #000000;
+                                    transition: all .4s linear;
+                                    text-transform: capitalize;
+                                    &:is(:hover,:focus){
+                                        color: #F29942;
+                                        font-weight: 600;
+                                    }
                                 }
                                 &:not(:last-child){
                                     padding-bottom: 5px;
@@ -99,10 +118,18 @@ footer{
                         &.fot-news{
                             padding-left: 50px;
                             span{
-                                @extend .text-1;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 18px;
+                                color: #000000;
                                 a{
-                                    @extend .inner-a;
-                                    @extend .hover-coral;
+                                    color: #000000;
+                                    transition: all .4s linear;
+                                    text-transform: capitalize;
+                                    &:is(:hover,:focus){
+                                        color: #F29942;
+                                        font-weight: 600;
+                                    }
                                     
                                 }
                                 &:not(:last-child){
@@ -112,9 +139,14 @@ footer{
                         }
                         &.social{
                             span{
-                                @extend .text-1;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 18px;
+                                color: #000000;
                                 a{
-                                    @extend .inner-a;
+                                    color: #000000;
+                                    transition: all .4s linear;
+                                    text-transform: capitalize;
                                 }
                                 &:not(:last-child){
                                     padding-bottom: 5px;
@@ -136,7 +168,10 @@ footer{
                     margin-right: 40px;
                     margin-bottom: 30px;
                     span{
-                        @extend .text-1;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 18px;
+                        color: #000000;
                         text-transform: uppercase;
                         font-weight: 600;
                         cursor: pointer;

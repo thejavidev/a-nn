@@ -20,6 +20,7 @@
         }
     }
     .homer-banner  {
+      
         .container-fluid {
             .row {
                 .text{
@@ -116,16 +117,22 @@
                 .text{
                     .content{
                         padding: 20px 0px 0px 20px;
-                        div{
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            z-index: 2;
-                            transform: translate(-50%,100%);
-                            a{
-                                span{
-                                    color: #fff;
-                                }
+                        .upvideo{
+                           display: none;
+                        }
+                    }
+                }
+                .picture{
+                    .video{
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        z-index: 2;
+                        transform: translate(-50%,-50%);
+                        a{
+                            span{
+                                color: #fff;
                             }
                         }
                     }
@@ -133,7 +140,19 @@
             }
         }
     }
-
+    header {
+        .container-fluid {
+            .row {
+                nav {
+                    .header-left {
+                        .header-left-text{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .banner{
         height: 30vh;
         &::before{
@@ -196,16 +215,53 @@
                     grid-template-areas:
                     "title"
                     "textt";
+                    grid-template-columns:1fr;
+                    margin-bottom: 40px;
                     .title{
                         margin-left: 0px;
+                        padding-bottom: 40px;
+                    }
+                    .text{
+                        text-align: center;
+                        width: 60%;
+                        justify-content: center;
+                        margin: auto;
                     }
                 }
                 .creativ,.digital,.strategy{
-                    
+                    text-align: center;
                     .title{
                         h2{
                             letter-spacing: normal;
                         }
+                    }
+                }
+                .creativ{
+                    margin-bottom: 40px;
+                    .title{
+                        order: -1;
+                    }
+                    .text{
+                        text-align: center;
+                        width: 60%;
+                        justify-content: center;
+                        margin: auto;
+                    }
+                }
+                .digital{
+                    grid-template-areas:
+                    "digtaltitle"
+                    "digitaltext";
+                  
+                    grid-template-columns:1fr;
+                    .title{
+                        margin-left: 0px;
+                    }
+                    .text{
+                        text-align: center;
+                        width: 60%;
+                        justify-content: center;
+                        margin: auto;
                     }
                 }
             }
@@ -215,10 +271,41 @@
         .container-fluid{
             .row {
                 .team_left{
+                    flex-direction: column;
                     padding: 30px 0;
                     .title {
                         h2{
                             font-size: 50px;
+                        }
+                    }
+                    .logo_team{
+                        margin-bottom: 40px;
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        .image{
+                            .mobile{
+                                display: block;
+                            }
+                            .desktop{
+                                display: none;
+                            }
+                        }
+                        span{
+                           margin-top: 30px;
+                           color: #fff;
+                           font-size: 18px;
+                           width: 70%;
+                           text-align: center;
+                           line-height: 1.2;
+                           padding-left: 0px;
+                        }
+                    }
+                    .title{
+                        margin: 40px 30px;
+                        h2{
+                            letter-spacing: 1vw;
+                            font-size: 70px;
                         }
                     }
                 }
@@ -284,7 +371,23 @@
             padding: 50px 0;
         }
     }
-    
+    .partners {
+        .container {
+            .row {
+                .partners_all{
+                    padding: 20px 40px;
+                    .content{
+                        h2{
+                            text-transform: lowercase;
+                        }
+                        span{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .work_banner{
         .work-banner-inner{
@@ -349,6 +452,32 @@
 
                     .left{
                         order: -1;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .container-fluid {
+            .row {
+                .footer-top {
+                    .inner {
+                        padding: 5px;
+                        .content{
+                            &.social{
+                                flex-direction: row;
+                                span:not(:first-child){
+                                    padding-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-bottom{
+                    margin-top: 40px;
+                    flex-direction: column;
+                    .location{
+                        width: 100%;
                     }
                 }
             }
@@ -497,6 +626,98 @@
             }
         }
     }
+    .partners {
+        .container {
+            .row {
+                .partners_all {
+                    .content{
+                        flex-direction: column;
+                        h2{
+                            padding-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .container-fluid {
+            .row {
+                .footer-top {
+                    flex-direction: column;
+                    .content-menus{
+                        order: -1;
+                        .content{
+                            flex-direction: row !important;
+                            span{
+                                text-decoration: underline;
+                            }
+                            span:not(:first-child){
+                                padding-left: 10px;
+                                
+                            }
+                            
+                        }
+                        .fot-news{
+                            padding-left: 0px !important;
+                            
+                        }
+                    }
+                    .inner{
+                        width: 100%;
+                        .fot-logo{
+                            order: 1;
+                        }
+                        .content{
+                            &.logos{
+                                .imag{
+                                    display: none;
+                                }
+                            }
+                            &.maps{
+                                .phone-text{
+                                    text-decoration: underline;
+                                }
+                                .mail-text{
+                                    padding-top: 5px;
+                                }
+                            }
+                            &.joins{
+                                .join{
+                                    text-decoration: underline;
+                                }
+                            }
+                            &.social{
+                                width: 100%;
+                                flex-wrap: wrap;
+                                span{
+                                    position: relative;
+                                    padding-top: 10px;
+                                    a{
+                                        text-decoration: underline;
+                                    }
+                                    &:not(:first-child)::before{
+                                        content: '/';
+                                        padding-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+    .work {
+        .container-fluid{
+            .row {
+                .right{
+                    width: 50%;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 565px){
@@ -529,7 +750,19 @@
             }
         }
     }
-
+    .about {
+        .container-fluid{
+            .row {
+                .strategy,.creativ, .digital{
+                    .title{
+                        h2{
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .work_detail_author{
         .container{
             .row{

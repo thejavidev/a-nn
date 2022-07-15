@@ -209,7 +209,7 @@ body {
     line-height: 1;
     -webkit-locale: auto;
     white-space: normal;
-
+    overflow: hidden;
     &.overflow {
         overflow: hidden;
     }
@@ -247,7 +247,9 @@ body {
     background-color: transparent;
     outline: none !important;
 }
-
+.mt-div{
+    margin-top: 100px;
+}
 .main {
     position: relative;
     z-index: 60;
@@ -255,10 +257,7 @@ body {
     background: #E9ECEF;
     box-shadow: 5px 5px 14px 0px rgba(2,45,98,.1);
 }
-.inner-main{
-    z-index: 88;
-    background: #E9ECEF;
-}
+
 
 @import './path/loader';
 @import './path/header';

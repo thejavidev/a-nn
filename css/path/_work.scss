@@ -177,14 +177,9 @@
                     font-size: 16px;
                     color: #626262;
                 }
-
-                .display{
+                .date {
                     display: flex;
                     flex-direction: column;
-                }
-
-                .date {
-                    @extend .display;
                     span{
                         &:not(:last-child){
                             padding-bottom: 5px;
@@ -193,7 +188,8 @@
                 }
 
                 .client {
-                    @extend .display;
+                    display: flex;
+                    flex-direction: column;
                     span{
                         &:not(:last-child){
                             padding-bottom: 5px;
@@ -202,10 +198,12 @@
                 }
 
                 .author {
-                    @extend .display;
+                    display: flex;
+                    flex-direction: column;
                     .a{
                         padding-bottom: 10px;
-                        @extend .display;
+                        display: flex;
+                        flex-direction: column;
                         span{
                             &:not(:last-child){
                                 padding-bottom: 5px;
@@ -214,7 +212,8 @@
                     }
 
                     .b{
-                        @extend .display;
+                        display: flex;
+                        flex-direction: column;
                         span{
                             &:not(:last-child){
                                 padding-bottom: 5px;

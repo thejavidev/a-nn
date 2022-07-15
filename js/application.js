@@ -4,6 +4,12 @@ function openpage(page) {
 
 var body = $('body');
 
+
+
+
+
+
+
 //NAVBAR-OVERFOLLOW========================
 $(".nav-mobile-button").click(function () {
 	$('html').addClass('add');
@@ -13,12 +19,12 @@ $(".btn-close").click(function () {
 });
 $(document).ready(function(){
 	var loop = $('.loop');
-	var owl = $('.owl-carousel');
+	var owl = $('.team_right');
 	owl.owlCarousel({
 		autoplay: true,
 		autoplayHoverPause: true,
-		autoplayTimeout: 3000,
-		autoplaySpeed: 1500,
+		autoplayTimeout: 5000,
+		autoplaySpeed: 2500,
 		center: true,
 		items: 1.7,
 		nav:false,
@@ -47,6 +53,31 @@ $(document).ready(function(){
 	// 	}
 	// 	e.preventDefault();
 	// })
+
+	$('.owl-js').owlCarousel({
+		items:8,
+		autoplay:true,
+		loop:true,
+		margin:5,
+		dots:true,
+		responsive:{
+		  0:{
+			items: 2
+		  },
+		  350:{
+			items: 2
+		  },
+		  600:{
+			  items:4,
+		  },
+		  800:{
+			items:5,
+			},
+		  1200:{
+			items:8,
+		},
+	  }
+	});
 });
 
 ///APPS================
@@ -56,11 +87,11 @@ var APP = {
 };
 // var html = document.querySelector("html");
 // html.classList.add("add");
-// wow = new WOW({
-//     animateClass: 'animated',
-//     offset: 100
-// });
-// wow.init();
+wow = new WOW({
+    animateClass: 'animated',
+    offset: 100
+});
+wow.init();
 
 $(window).on('scroll', function (event) {
 	var scroll = $(window).scrollTop();
@@ -201,35 +232,40 @@ $(window).on('load', function () {
 		});
 	}
 });
-function anime(){
-	setTimeout(function(){
-        document.querySelector('.animations-1').classList.add('add');
-    },0);
-	setTimeout(function(){
-        document.querySelector('.animations-2').classList.add('add');
-    },1000);
-	setTimeout(function(){
-        document.querySelector('.animations-3').classList.add('add');
-    },2200);
-	setTimeout(function(){
-        document.querySelector('.animations-4').classList.add('add');
-    },3200);
-	setTimeout(function(){
-        document.querySelector('.animations-5').classList.add('add');
-    },4200);
-	setTimeout(function(){
-        document.querySelector('.animations-6').classList.add('add');
-    },5200);
+
+APP.anime = function(){
+	function anime(){
+		setTimeout(function(){
+			document.querySelector('.animations-1').classList.add('add');
+		},0);
+		setTimeout(function(){
+			document.querySelector('.animations-2').classList.add('add');
+		},700);
+		setTimeout(function(){
+			document.querySelector('.animations-3').classList.add('add');
+		},1900);
+		setTimeout(function(){
+			document.querySelector('.animations-4').classList.add('add');
+		},2700);
+		setTimeout(function(){
+			document.querySelector('.animations-5').classList.add('add');
+		},3500);
+		setTimeout(function(){
+			document.querySelector('.animations-6').classList.add('add');
+		},4200);
+	}
+	$(window).on('scroll', function (event) {
+		var scroll = $(window).scrollTop();
+		if (scroll > 450) {
+			setTimeout(() => {
+				anime();
+			}, 0);
+			
+		}
+	});
 }
 
 
-$(window).on('scroll', function (event) {
-	var scroll = $(window).scrollTop();
-	if (scroll > 450) {
-		setTimeout(() => {
-			anime();
-		}, 0);
-		
-	}
-});
+
+
 

@@ -1,18 +1,16 @@
 .homer-banner{
     position: relative;
     margin-bottom: 50px;
-    padding-bottom: calc(var(--vh, 1vh)*65);
-    z-index: -1;
     .container-fluid{
       
-        &.s-hero__background{
-            position: fixed;
-            top: 100px;
-            left: 0;
-            &.initial{
-                position: initial;
-            }
-        }
+        // &.s-hero__background{
+        //     position: fixed;
+        //     top: 100px;
+        //     left: 0;
+        //     &.initial{
+        //         position: initial;
+        //     }
+        // }
         .row{
             padding: 0px;
             .upvideo{

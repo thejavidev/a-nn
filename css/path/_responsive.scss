@@ -110,6 +110,19 @@
         }
     }
 }
+@media screen and (max-width:1200px) {
+   
+    .work,.news {
+        .container-fluid {
+            .row {
+                .right{
+                    flex-direction: column;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 991px){
     .homer-banner  {
         .container-fluid {
@@ -195,7 +208,7 @@
                 .right{
                     width: 20%;
                     position: absolute;
-                    bottom: -40px;
+                    bottom: -65px;
                     right: 0;
                 }
             }
@@ -331,7 +344,7 @@
                 .right{
                     width: 30%;
                     position: absolute;
-                    bottom: -40px;
+                    bottom: -65px;
                     right: 0;
                 }
             }

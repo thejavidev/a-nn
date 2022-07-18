@@ -256,6 +256,9 @@ body {
     flex-grow: 1;
     background: #E9ECEF;
     box-shadow: 5px 5px 14px 0px rgba(2,45,98,.1);
+    &.contact{
+        box-shadow: none;
+    }
 }
 
 

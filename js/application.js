@@ -261,7 +261,31 @@ APP.anime = function () {
 		}
 	});
 }
-
+APP.anime2 = function () {
+	function anime() {
+		setTimeout(function () {
+			document.querySelector('.animations-1').classList.add('add');
+		}, 0);
+		setTimeout(function () {
+			document.querySelector('.animations-2').classList.add('add');
+		}, 700);
+		setTimeout(function () {
+			document.querySelector('.animations-3').classList.add('add');
+		}, 1900);
+		setTimeout(function () {
+			document.querySelector('.animations-4').classList.add('add');
+		}, 2700);
+		setTimeout(function () {
+			document.querySelector('.animations-5').classList.add('add');
+		}, 3500);
+		setTimeout(function () {
+			document.querySelector('.animations-6').classList.add('add');
+		}, 4200);
+	}
+	setTimeout(() => {
+		anime();
+	}, 1500);
+}
 
 APP.news = function () {
 	$(window).on('scroll', function (event) {
@@ -269,8 +293,10 @@ APP.news = function () {
 		logo = $("header .logo img");
 		if (scroll < 50) {
 			$('.nav-mobile-bar').removeClass('addColor');
+			$('.apply').removeClass('addColor');
 			logo.attr('src', '/img/header//logo-white.png');
 		} else {
+			$('.apply').addClass('addColor');
 			$('.nav-mobile-bar').addClass('addColor');
 			logo.attr('src', '/img/header//logo.png');
 		}

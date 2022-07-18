@@ -1,7 +1,7 @@
 .banner {
-    background: url('/img/works/banner-bg.png') no-repeat fixed;
-    background-position: center;
-    background-size: cover;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
     height: 50vh;
     position: relative;
 

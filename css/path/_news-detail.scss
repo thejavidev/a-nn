@@ -100,51 +100,54 @@
 }
 
 .news_detail_author{
+    margin-top: 70px;
     .container{
         .row{
-            .information{
-                width: 100%;
-                padding: 50px 100px;
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            .bold{
+                font-weight: 600;
+            }
+            span{
+                font-size: 16px;
+                color: #626262;
+            }
+            .date{
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                .bold{
-                    font-weight: 600;
+                flex-direction: column;
+                span:nth-child(1){
+                    margin-bottom: 15px;
                 }
-                span{
+            }
+            .author{
+                display: flex;
+                flex-direction: column;
+                span:nth-child(1){
+                    margin-bottom: 15px;
+                }
+            }
+            .share{
+              
+                width: max-content;
+               
+                .bold{
+                    margin-bottom: 15px;
                     font-size: 16px;
                     color: #626262;
+       
                 }
-                .date{
+                ul{
                     display: flex;
-                    flex-direction: column;
-                    span{
-                        margin-top: 10px;
-                    }
-                }
-                .author{
-                    display: flex;
-                    flex-direction: column;
-                    span{
-                        margin-top: 10px;
-                    }
-                }
-
-                .share{
-                    width: 100%;
-                    ul{
-                        display: flex;
-                        margin-top: 10px;
-                        flex-wrap: wrap;
-                        li{
-                            a{
-                                font-size: 16px;
-                                color: #626262;
-                            }
-                            &:not(:last-child){
-                                padding-right: 15px;
-                            }
-
+                   
+                    flex-wrap: wrap;
+                    li{
+                        a{
+                            font-size: 16px;
+                            color: #626262;
+                        }
+                        &:not(:last-child){
+                            padding-right: 15px;
                         }
                     }
                 }

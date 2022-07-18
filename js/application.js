@@ -40,6 +40,10 @@ $(document).ready(function () {
 			400: {
 				items: 1,
 				margin: 5,
+			},
+			0: {
+				items: 1,
+				margin: 5,
 			}
 		}
 	})

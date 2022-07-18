@@ -373,7 +373,7 @@ header .container-fluid .row nav .header-right .nav-mobile-button {
   position: relative;
 }
 header .container-fluid .row nav .header-right .nav-mobile-button .nav-mobile-bar {
-  left: 15px;
+  right: 15px;
   width: 35px;
   height: 3px;
   background: black;
@@ -662,9 +662,9 @@ header.isFixed .container-fluid {
   text-align: center;
   overflow: hidden;
   background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: cover !important;
-  padding: 250px 0;
+  background-position: center center !important;
+  background-size: 100% 100% !important;
+  height: 40vh;
 }
 
 .work_text {
@@ -1933,6 +1933,9 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   .news-content .container-fluid .row .news-padding {
     padding: 50px;
   }
+  header .container-fluid .row nav .header-right .apply {
+    right: 120px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .work .container-fluid .row .right, .news .container-fluid .row .right {
@@ -2130,10 +2133,13 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   .partners .container .row .partners_all .content span {
     width: 100%;
   }
+  .work_banner {
+    height: 25vh;
+  }
   .work_banner .work-banner-inner {
     padding: 100px 0;
   }
-  .work-project-images .back-project {
+  .work-project-images .container-fluid .row .resize-images .back-project {
     display: none;
   }
   .work_detail_author .container .row .information_work_detail {
@@ -2180,8 +2186,22 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   footer .container-fluid .row .footer-bottom .location {
     width: 100%;
   }
+  .contact .container .row .left .content {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact .container .row .right {
+    margin-top: 50px;
+  }
+  .contact .container .row .right .content {
+    padding-right: 0px;
+    justify-content: flex-start;
+  }
 }
 @media screen and (max-width: 767px) {
+  header .container-fluid .row nav .header-right .apply {
+    display: none;
+  }
   .banner .container-fluid .row .image i {
     font-size: 14px;
   }
@@ -2194,6 +2214,12 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   .works .container .row .menu .works-button button {
     font-size: 14px;
   }
+  .homer-banner .container-fluid .row .text .content h2 {
+    width: 100%;
+  }
+  .homer-banner .container-fluid .row .upvideo span {
+    font-size: 15px;
+  }
   .about .container-fluid .row .strategy, .about .container-fluid .row .creativ, .about .container-fluid .row .digital {
     flex-direction: column;
   }
@@ -2202,6 +2228,10 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   }
   .about .container-fluid .row .strategy .text p, .about .container-fluid .row .creativ .text p, .about .container-fluid .row .digital .text p {
     font-size: 15px;
+  }
+  .team .container-fluid .row .team_left .title h2 {
+    font-size: 45px;
+    letter-spacing: normal;
   }
   .work_text .container .row .top .content h2 {
     width: 65%;
@@ -2317,10 +2347,36 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   .work .container-fluid .row .right {
     width: 50%;
   }
+  .work_banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+  }
+  .news-content .container-fluid .row .news-padding .content-top h2 {
+    width: 100%;
+  }
+  .contact .container .row .right {
+    margin-bottom: 50px;
+  }
+  .contact .container .row .right .content .inner-content {
+    width: 100%;
+  }
+  .contact .container .row .right .content .inner-content .subscribe input {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 565px) {
   .works .container .row .portfolio_gallery .box {
     width: 100%;
+  }
+  .work_banner {
+    height: 17vh;
   }
   .work_text .container {
     padding: 50px 20px;
@@ -2336,6 +2392,9 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   }
   header .container-fluid .row nav .header-right .modal .modal-dialog .modal-content .modal-body ul li a {
     font-size: 78px;
+  }
+  header.isFixed .container-fluid {
+    padding: 0px 10px;
   }
   .work_detail_author .container .row .information_work_detail {
     grid-template-columns: repeat(auto-fit, minmax(170px, 2fr));

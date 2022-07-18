@@ -109,6 +109,19 @@
             }
         }
     }
+    header{
+        .container-fluid{
+            .row{
+                nav{
+                    .header-right{
+                        .apply{
+                            right: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width:1200px) {
    
@@ -153,6 +166,7 @@
             }
         }
     }
+    
     header {
         .container-fluid {
             .row {
@@ -184,6 +198,7 @@
                                 }
                             }
                         }
+                        
                     }
                 }
             }
@@ -426,16 +441,23 @@
     }
 
     .work_banner{
+        height: 25vh;
         .work-banner-inner{
             padding: 100px 0;
         }
     }
-
-    .work-project-images{
-        .back-project{
-            display: none;
+    .work-project-images {
+        .container-fluid {
+            .row {
+                .resize-images {
+                    .back-project{
+                        display: none;
+                    }
+                }
+            }
         }
     }
+    
 
     .work_detail_author{
         .container{
@@ -493,6 +515,7 @@
             }
         }
     }
+    
     footer {
         .container-fluid {
             .row {
@@ -519,9 +542,48 @@
             }
         }
     }
+    .contact {
+        .container {
+            .row {
+                .left {
+                    .content{
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+                .right{
+                    margin-top: 50px;
+                    .content{
+                        padding-right: 0px;
+                        justify-content: flex-start;
+                        .inner-content{
+                            .subscribe {
+                                input{
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px){
+    header{
+        .container-fluid{
+            .row{
+                nav{
+                    .header-right{
+                        .apply{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .banner{
         .container-fluid{
             .row{
@@ -552,7 +614,24 @@
             }
         }
     }
-
+    .homer-banner {
+        .container-fluid {
+            .row {
+                .text {
+                    .content {
+                        h2{
+                            width: 100%;
+                        }
+                    }
+                }
+                .upvideo{
+                    span{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
     .about{
         .container-fluid{
             .row{
@@ -572,7 +651,20 @@
             }
         }
     }
-
+    .team {
+        .container-fluid{
+            .row {
+                .team_left {
+                    .title{
+                        h2{
+                            font-size: 45px;
+                            letter-spacing: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .work_text{
         .container{
             .row{
@@ -754,6 +846,49 @@
             }
         }
     }
+    .work_banner::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 2;
+    }
+    .news-content {
+        .container-fluid {
+            .row .news-padding {
+                .content-top {
+                    h2{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .contact {
+        .container {
+            .row {
+               
+                .right{
+                 margin-bottom: 50px;
+                    .content{
+            
+                        .inner-content{
+                            width: 100%;
+                            .subscribe {
+                                input{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 565px){
@@ -768,7 +903,9 @@
             }
         }
     }
-
+    .work_banner{
+        height: 17vh;
+    }
     .work_text{
         .container {
             padding: 50px 20px;
@@ -824,6 +961,11 @@
                         }
                     }
                 }
+            }
+        }
+        &.isFixed {
+            .container-fluid{
+                padding: 0px 10px;
             }
         }
     }

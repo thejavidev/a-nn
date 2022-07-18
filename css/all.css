@@ -431,11 +431,11 @@ header .container-fluid .row nav .header-right .modal .modal-dialog .modal-conte
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-top: 70px;
+  padding-top: 120px;
   padding-right: 70px;
 }
-header .container-fluid .row nav .header-right .modal .modal-dialog .modal-content .modal-body ul li:not(:last-child, :first-child) {
-  padding-top: 45px;
+header .container-fluid .row nav .header-right .modal .modal-dialog .modal-content .modal-body ul li:not(:last-child) {
+  padding-bottom: 45px;
 }
 header .container-fluid .row nav .header-right .modal .modal-dialog .modal-content .modal-body ul li a {
   font-size: 100px;
@@ -1948,6 +1948,15 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   header .container-fluid .row nav .header-left .header-left-text {
     display: none;
   }
+  header .container-fluid .row nav .header-right .modal .modal-dialog .modal-content .modal-body {
+    padding-right: 30px;
+  }
+  header .container-fluid .row nav .header-right .modal .modal-dialog .modal-content .modal-body ul li a {
+    font-size: 85px;
+  }
+  header .container-fluid .row nav .header-right .modal .modal-dialog .modal-content .modal-header .btn-close {
+    right: 30px;
+  }
   .banner {
     height: 30vh;
   }
@@ -2311,6 +2320,9 @@ footer .container-fluid .row .footer-bottom .location .location-map .ifarame-map
   }
   .about .container-fluid .row .strategy .title h2, .about .container-fluid .row .creativ .title h2, .about .container-fluid .row .digital .title h2 {
     font-size: 50px;
+  }
+  header .container-fluid .row nav .header-right .modal .modal-dialog .modal-content .modal-body ul li a {
+    font-size: 78px;
   }
   .work_detail_author .container .row .information_work_detail {
     grid-template-columns: repeat(auto-fit, minmax(170px, 2fr));

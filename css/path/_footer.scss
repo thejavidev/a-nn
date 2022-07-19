@@ -4,13 +4,13 @@ footer{
 
     .container-fluid{
         .row{
-           
+            
             .inner-a{
                 color: #000000;
                 transition: all .4s linear;
                 text-transform: capitalize;
                 &:is(:hover,:focus){
-                    color: #001A54;
+                    color: #000;
                     letter-spacing: 1px;
                 }
             }
@@ -44,14 +44,13 @@ footer{
                         &.maps{
                             .map-text{
                                 font-weight: 500;
-                                font-size: 17px;
                                 line-height: 18px;
                                 color: #000000;
                                 font-size: 16px;
                             }
                             .phone-text{
                                 font-weight: 500;
-                                font-size: 17px;
+                                font-size: 16px;
                                 line-height: 18px;
                                 color: #000000;
                                 padding-top: 20px;
@@ -63,7 +62,7 @@ footer{
                             }
                             .mail-text{
                                 font-weight: 500;
-                                font-size: 17px;
+                                font-size: 16px;
                                 line-height: 18px;
                                 color: #000000;
                                 padding-top: 20px;
@@ -79,14 +78,14 @@ footer{
                         &.joins{
                             .join{
                                 font-weight: 500;
-                                font-size: 17px;
+                                font-size: 16px;
                                 line-height: 18px;
                                 color: #000000;
                             }
                             .join-mail{
                                 padding-top: 10px;
                                 font-weight: 500;
-                                font-size: 17px;
+                                font-size: 16px;
                                 line-height: 18px;
                                 color: #000000;
                                 a{
@@ -98,16 +97,15 @@ footer{
                         &.menu{
                             span{
                                 font-weight: 500;
-                                font-size: 17px;
+                                font-size: 16px;
                                 line-height: 18px;
                                 color: #000000;
                                 a{
                                     color: #000000;
-                                    transition: all .4s linear;
+                                    transition: all .3s linear;
                                     text-transform: capitalize;
                                     &:is(:hover,:focus){
                                         color: #F29942;
-                                        font-weight: 600;
                                     }
                                 }
                                 &:not(:last-child){
@@ -119,7 +117,7 @@ footer{
                             padding-left: 50px;
                             span{
                                 font-weight: 500;
-                                font-size: 17px;
+                                font-size: 16px;
                                 line-height: 18px;
                                 color: #000000;
                                 a{
@@ -140,7 +138,7 @@ footer{
                         &.social{
                             span{
                                 font-weight: 500;
-                                font-size: 17px;
+                                font-size: 16px;
                                 line-height: 18px;
                                 color: #000000;
                                 a{
@@ -169,7 +167,7 @@ footer{
                     margin-bottom: 30px;
                     span{
                         font-weight: 500;
-                        font-size: 17px;
+                        font-size: 16px;
                         line-height: 18px;
                         color: #000000;
                         text-transform: uppercase;

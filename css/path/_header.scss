@@ -101,7 +101,7 @@ header{
                                             transition: all .4s linear;
                                         }
                                         &:is(:hover,:focus) i{
-                                            color: red;
+                                            color: #DC248E;
                                         }
                                     }
                                 }
@@ -139,18 +139,24 @@ header{
                         position: absolute;
                         right: 200px;
                         top: 27px;
-                        font-weight: 700;
+                        font-weight: 600;
                         font-size: 16px;
                         text-decoration: underline;
+                        box-shadow: none;
+                        outline: none;
+                        border: none;
                         &.addColor{
                             color: #000;
+                            border: none;
+                            outline: none;
+                            box-shadow: none;
                         }
                     }
                 }
             }
         }
     }
-   
+    
     &.isFixed{
         background-color: #fff;
         z-index: 1099;
